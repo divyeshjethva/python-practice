@@ -1,4 +1,4 @@
-
+import datetime
 d = {}
 menu = """
     WELLCOME TO FRUIT MARKET 
@@ -30,8 +30,8 @@ while True:
                 name = input("enter fruit name :")
                 qty = int(input("enter qty (in kg) :"))
                 price = int(input("enter fruit price :"))
-                
-                d[name] = {"qyt" : qty,"price" : price}
+                time = datetime.datetime.now()
+                d[name] = {"qyt" : qty,"price" : price,"time":time}
                 print("fruit is added")
                 
             elif choice == 2:
@@ -41,6 +41,7 @@ while True:
                     print(j,":")
                     for keys,value in n.items():
                         print("     ",keys,":",value)
+                        
                 print("---------------------")
                 
             elif choice == 3:
