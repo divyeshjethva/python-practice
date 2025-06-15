@@ -28,12 +28,20 @@ class marks(roll):
             print(i,":")
             for k,v in j.items():
                 print("     ",k,":",v)
-            print("==========================")
+        print("==========================")
 
 
 obj = marks()
-obj.set_name("divyesh")
-obj.set_roll(78)
-obj.set_marks(100)
+
+for i in range(2):
+    name_d = input("Enter name :")
+    roll_d = int(input("Enter roll no. :"))
+    marks_d = int(input("Enter marks :"))
+    
+    obj.set_name(name_d)
+    obj.set_roll(roll_d)
+    obj.set_marks(marks_d)
+    print("------------------------")
+    
 obj.show_marks()
 obj.print_dic()
