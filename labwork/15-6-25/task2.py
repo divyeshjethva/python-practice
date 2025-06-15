@@ -11,7 +11,16 @@ class roll(student):
         self.show_name()
         print("ROLL NO :", self.roll)
 
-obj = roll()
+class marks(roll):
+    def set_marks(self,marks):
+        self.marks = marks
+    def show_marks(self):
+        self.show_roll()
+        print("MARKS :", self.marks)
+        
+
+obj = marks()
 obj.set_name("divyesh")
 obj.set_roll(78)
-obj.show_roll()
+obj.set_marks(100)
+obj.show_marks()
