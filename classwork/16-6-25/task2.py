@@ -13,10 +13,11 @@ class c(a):
         print("method 3")
 
 obj1 = b()
-obj2 = c()
 
 obj1.fun1()
 obj1.fun2()
 
+
+obj2 = c()
 obj2.fun1()
 obj2.fun3()
