@@ -26,7 +26,10 @@ while True:
     elif choice==2:
         d = {"p":1100,"q":1800}
         d1 = {"r":800,"s":600}
-
+        
+        for i,j in d1.items():
+            d.update({i*2:j*2})
+        print(d)
         # output : {"p":1100,"q":1800,"r":1600,"s":1200}
     
     elif choice == 3:
