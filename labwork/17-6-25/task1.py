@@ -12,6 +12,16 @@ while True:
     
     if choice==1:
         l = [1,7,8,9,2,1,1,2]
+        
+        l1 = []
+        l2 = []
+        for i in l:
+            if i not in l1:
+                l1.append(i)
+            else:
+                l2.append(i)
+        print(l1)
+        print("uniq :", l2)
     
     elif choice==2:
         d = {"p":1100,"q":1800}
