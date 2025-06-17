@@ -34,6 +34,17 @@ while True:
     
     elif choice == 3:
         print("mid of string")
+        a = "divyesh"
+
+        odd = len(a) // 2
+
+        if odd%2 == 0:
+            print("that is even string try")
+        else :
+            # print("work")
+            print( a[odd-1]+a[odd]+a[odd+1] )
+
+        print(odd)
     
     elif choice == 4:
         print("pyramid")
