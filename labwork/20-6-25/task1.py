@@ -92,3 +92,16 @@
 # for i in range(len(l1)):
 #     d[l1[i]] = l2[i]
 # print(d)
+
+# =========================================
+
+# charecter counter
+
+# s = "ajay"
+# d = {}
+# for i in s:
+#     if i in d:
+#         d[i] = d[i] + 1
+#     else:
+#         d[i] = 1
+# print(d)
