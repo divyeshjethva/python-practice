@@ -37,3 +37,17 @@
 #     print("pelidrom")
 # else:
 #     print("not")
+
+# =======================================
+
+# armstrong
+
+# a = "20"
+# b = 0
+# for i in a:
+#     b += int(i) * int(i) * int(i)
+    
+# if b == int(a):
+#     print("armstrong")
+# else:
+#     print("not")
