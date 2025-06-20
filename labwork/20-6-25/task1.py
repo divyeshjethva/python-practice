@@ -1,13 +1,13 @@
 # find mid of String
 
-# a = "ajay"
+# a = "dharmes"
 
-# odd = len(a) // 2 
+# odd = len(a) // 2
 
-# if odd:
-#     print(a[odd-1] + a[odd] + a[odd+1])
-# else:
+# if odd%2 == 0:
 #     print("Enter odd string")
+# else:
+#     print(a[odd-1] + a[odd] + a[odd+1])
 
 # print(odd)
 
