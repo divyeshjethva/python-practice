@@ -44,10 +44,23 @@
 
 # a = "20"
 # b = 0
-# for i in a:
+# for i in a:   
 #     b += int(i) * int(i) * int(i)
     
 # if b == int(a):
 #     print("armstrong")
 # else:
 #     print("not")
+
+# ========================================
+
+# finanaci series
+
+# a = 0 
+# b = 1
+# l = []
+
+# for i in range(10):
+#     l.append(a)
+#     a,b = b, a+b
+# print(l)
