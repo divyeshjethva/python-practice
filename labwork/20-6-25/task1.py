@@ -105,3 +105,20 @@
 #     else:
 #         d[i] = 1
 # print(d)
+
+# ================================================
+
+# even or odd
+
+# l1 = []
+# l2 = []
+
+# for i in range(1,5):
+#     a = int(input("entr num:"))
+#     if a%2==0:
+#         l1.append(a)
+#     else:
+#         l2.append(a)
+        
+# print(l1)
+# print(l2)
