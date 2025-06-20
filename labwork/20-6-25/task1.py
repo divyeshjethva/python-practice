@@ -79,3 +79,16 @@
 #         l1.append(i)
 # print(l1)
 # print(l2)
+
+
+# =================================================
+
+# convert to dictonary 
+
+# l1 = [1,2,3,4]
+# l2 = [5,6,7,8]
+# d = {}
+
+# for i in range(len(l1)):
+#     d[l1[i]] = l2[i]
+# print(d)
