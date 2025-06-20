@@ -14,16 +14,26 @@
 # ======================================================
 
 
-# Count vowels and consonants in a string - a,i,o,u,e
+# # Count vowels and consonants in a string - a,i,o,u,e
 
-vowels = 'aeiou'
-vowel_count = 0
-s = "divyeshee"
+# vowels = 'aeiou'
+# vowel_count = 0
+# s = "divyeshee"
 
-for i in s:
-    if i in vowels:
-        vowel_count += 1
-print(vowel_count)
+# for i in s:
+#     if i in vowels:
+#         vowel_count += 1
+# print(vowel_count)
 
+# =================================================
 
+# pelidrom - wow,nayan
 
+# s = "naya"
+
+# rs = s[::-1]
+
+# if rs == s:
+#     print("pelidrom")
+# else:
+#     print("not")
