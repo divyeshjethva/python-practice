@@ -64,3 +64,18 @@
 #     l.append(a)
 #     a,b = b, a+b
 # print(l)
+
+# ==============================================
+
+# uniq list
+
+# l = [1,2,3,1,2] 
+# l1 = []
+# l2 = []
+# for i in l:
+#     if i in l1:
+#         l2.append(i)
+#     else:
+#         l1.append(i)
+# print(l1)
+# print(l2)
