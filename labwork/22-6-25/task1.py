@@ -17,13 +17,21 @@ class admin:
         price = int(input("Enter product price :"))
         qty = int(input("Enter product qty"))
         d[name] = {"name":name, "price":price,"qty":qty}
-# class user:
-#     pass
-
-# class join(admin,user):
-#     pass
 
 obj = admin()
 
-obj.add(1)
-# for i,j in enumerate(d,1):
+while True:
+    menu = """
+        press 1 for admin
+        press 2 for user update
+        press 3 for exit view
+    """
+    
+    print(menu)
+    choice = int(input("enter your choice :"))
+    if choice == 1:
+        obj.add()
+    elif choice == 2:
+        obj.update()
+    elif choice == 3:
+        obj.view()
