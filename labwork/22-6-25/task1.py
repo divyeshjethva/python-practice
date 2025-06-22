@@ -11,8 +11,12 @@ class admin:
             print(i,":")
             for k,v in j.items():
                 print(k,":",v)
-        
-        
+                
+    def update(self):        
+        name = input("Enter product name :")
+        price = int(input("Enter product price :"))
+        qty = int(input("Enter product qty"))
+        d[name] = {"name":name, "price":price,"qty":qty}
 # class user:
 #     pass
 
