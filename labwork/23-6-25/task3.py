@@ -1,0 +1,2 @@
+class admin:
+    pass
