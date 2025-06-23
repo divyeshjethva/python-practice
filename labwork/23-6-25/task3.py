@@ -1,8 +1,4 @@
-class user:
-    def see(self):
-        print("work")
-        
-class admin(user):
+class admin:
     def add(self, index):
         pname = input("Enter product name :")
         price = input("Enter product price :")
@@ -15,8 +11,13 @@ class admin(user):
             print(i,":")
             for k,v in j.items():
                 print(k,":",v)
+                
+class user(admin):
+    def see(self):
+        print("work")
         
-obj = admin()
+        
+obj = user()
 d = {}
 index = 1
 while True:
