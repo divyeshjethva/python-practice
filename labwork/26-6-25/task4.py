@@ -15,49 +15,58 @@ class user:
         
     def deposit(self):
         no = int(input("Enter account no. to deposit :"))
+        name = ""
         if no in d:
             for i,j in d.items():
                 if i == no:
                     for k,v in j.items():
                         # print(k,":",v)
+                        if k == "name":
+                            print(v)
+                            name = v
                         if k == "balance":
                             dep = int(input("Enter amount to deposit :"))
                             a = v + dep
-                            print(d)
-                            d[self.index] = {"name":self.name, "balance":a}
-                            print(d)
-                            print("Deposit sucessfully")
                             print("current balance is :",a)
+                            d[i] = {"name":name, "balance":a}
+                            print("Deposit sucessfully")
         else:
             print("invalid account number")
             
     def withdraw(self):
         no = int(input("Enter account no. to withdraw :"))
+        name = ""
         if no in d:
             for i,j in d.items():
                 if i == no:
                     for k,v in j.items():
                         # print(k,":",v)
+                        if k == "name":
+                            print(v)
+                            name = v
+                        
                         if k == "balance":
                             dep = int(input("Enter amount to withdrew :"))
                             a = v - dep
-                            d[self.index] = {"name":self.name, "balance":a}
-                            print("withdrew sucessfully")
                             print("current balance is :",a)
+                            d[i] = {"name":name, "balance":a}
+                            print("withdrew sucessfully")
         else:
             print("invalid account number")
     
+    # def view(self):
+    #     no = int(input("Enter account no. to view :"))
+    #     if no in d:
+    #         for i,j in d.items():
+    #             if i == no:
+    #                 # print(j)
+    #                 for k,v in j.items():
+    #                     print(k,":",v)
+    #     else:
+    #         print("invalid account number")
     def view(self):
-        no = int(input("Enter account no. to view :"))
-        if no in d:
-            for i,j in d.items():
-                if i == no:
-                    # print(j)
-                    for k,v in j.items():
-                        print(k,":",v)
-        else:
-            print("invalid account number")
-        
+        for i,j in d.items():
+            print(i,":",j)
 
 obj = user()
 index = 1001
