@@ -22,14 +22,28 @@ class user:
                         # print(k,":",v)
                         if k == "balance":
                             dep = int(input("Enter amount to deposit :"))
-                            a = v - dep
+                            a = v + dep
                             d[self.index] = {"name":self.name, "balance":a}
+                            print("Deposit sucessfully")
                             print("current balance is :",a)
         else:
             print("invalid account number")
             
     def withdraw(self):
-        pass
+        no = int(input("Enter account no. to withdraw :"))
+        if no in d:
+            for i,j in d.items():
+                if i == no:
+                    for k,v in j.items():
+                        # print(k,":",v)
+                        if k == "balance":
+                            dep = int(input("Enter amount to withdrew :"))
+                            a = v - dep
+                            d[self.index] = {"name":self.name, "balance":a}
+                            print("withdrew sucessfully")
+                            print("current balance is :",a)
+        else:
+            print("invalid account number")
     
     def view(self):
         no = int(input("Enter account no. to view :"))
