@@ -23,7 +23,9 @@ class user:
                         if k == "balance":
                             dep = int(input("Enter amount to deposit :"))
                             a = v + dep
+                            print(d)
                             d[self.index] = {"name":self.name, "balance":a}
+                            print(d)
                             print("Deposit sucessfully")
                             print("current balance is :",a)
         else:
