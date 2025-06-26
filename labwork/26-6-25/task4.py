@@ -1,16 +1,50 @@
 # BANK MANAGEMENT SYSTEM
 
+d = {}
+
 class user:
-    def create(self):
-        pass
+    def create(self,index):
+        name = input("Enter name :")
+        balance = int(input("Enter opaning balance :"))
+        d[index] = {"name":name, "balance":balance}
+        print("your account no .:",index)
+        print("Account created")
+        self.name = name
+        self.balance = balance
+        self.index = index
+        
     def deposit(self):
-        pass
+        no = int(input("Enter account no. to deposit :"))
+        if no in d:
+            for i,j in d.items():
+                if i == no:
+                    for k,v in j.items():
+                        # print(k,":",v)
+                        if k == "balance":
+                            dep = int(input("Enter amount to deposit :"))
+                            a = v - dep
+                            d[self.index] = {"name":self.name, "balance":a}
+                            print("current balance is :",a)
+        else:
+            print("invalid account number")
+            
     def withdraw(self):
         pass
+    
     def view(self):
-        pass
+        no = int(input("Enter account no. to view :"))
+        if no in d:
+            for i,j in d.items():
+                if i == no:
+                    # print(j)
+                    for k,v in j.items():
+                        print(k,":",v)
+        else:
+            print("invalid account number")
+        
 
 obj = user()
+index = 1001
 
 menu = """
     press 1 for create account
@@ -25,7 +59,8 @@ while True:
     choice = int(input("Enter your choice :"))
     
     if choice == 1:
-        obj.create()
+        obj.create(index)
+        index += 1
     elif choice == 2:
         obj.deposit()
     elif choice == 3:
