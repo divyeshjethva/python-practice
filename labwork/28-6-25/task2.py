@@ -21,6 +21,17 @@ while True:
         data = cursor.fetchall()
         print(data)
         connection.commit()
+    
+    elif choice == 3:
+        no = int(input("Enter account no. to deposit :"))
+        dep = int(input("Enter amount to deposit :"))
+        
+        cursor.execute(f"SELECT balance FROM bank WHERE id = {no}")
+        data = cursor.fetchone()
+        a = data[0] + dep
+        
+        cursor.execute(f"UPDATE bank SET balance={a} WHERE id = {no}")
+        connection.commit()
         
     else:
         print("thank you")
