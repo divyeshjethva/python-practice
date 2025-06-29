@@ -8,4 +8,6 @@ connection = pymysql.connect(
 )
 cursor = connection.cursor()
 
-# cursor.execute("CREATE TABLE IF NOT")
+cursor.execute("CREATE TABLE IF NOT EXISTS bank (id INT AUTO_INCREMENT PRIMARY KEY,name VARCHAR(100),balance INT)")
+
+connection.commit()
