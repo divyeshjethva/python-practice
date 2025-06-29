@@ -1,8 +1,6 @@
 # BANK MANAGEMENT SYSTEM
 from connection import *
 
-d = {}
-
 class user:
     def create(self):
         name = input("Enter name :")
