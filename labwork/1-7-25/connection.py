@@ -9,6 +9,6 @@ connection = pymysql.connect (
 
 cursor = connection.cursor()
 
-cursor.execute("CREATE TABLE IF NOT EXISTS todo (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(100),mobile INT,password VARCHAR(100))")
+cursor.execute("CREATE TABLE IF NOT EXISTS todo (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(100))")
 
 connection.commit()
