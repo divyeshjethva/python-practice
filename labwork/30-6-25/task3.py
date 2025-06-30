@@ -31,7 +31,13 @@ def fun2():
     e_cpassword = Entry(root,font=('Arial',12,'bold'))
     e_cpassword.place(x=250,y=200)
     
-    btn = Button(root,text='Register',font=('Arial',12,'bold'),bg='blue',fg='white',command=fun1)
+    def handle_register():
+        name = e_name.get()
+        mobile = e_mob.get()
+        password = e_password.get()
+        fun1(name, mobile, password)
+    
+    btn = Button(root,text='Register',font=('Arial',12,'bold'),bg='blue',fg='white',command=handle_register)
     btn.place(x=200,y=280)
         
     root.mainloop()

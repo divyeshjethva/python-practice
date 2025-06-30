@@ -1,19 +1,19 @@
 from tkinter import *
+from connection import *
 
-def fun1():
-    # from task1 import e_name,e_password
-
-    # name = e_name.get()
-    # password = e_password.get()
-    # # print(name,password)
+def fun1(name,mobile,password):
+    # print(name,password)
     
     root = Tk()
 
     root.geometry("500x500")
-    root.title("wellcome back sir")
+    root.title("wellcome page")
 
-    well = Label(root,text=f'WELLCOME SIR',font=('Arial',20,'bold'))
+    well = Label(root,text=f'WELLCOME {name} SIR',font=('Arial',20,'bold'))
     well.pack()
+    
+    cursor.execute(f"INSERT INTO tkinter (name, mobile, password) VALUES ('{name}',{mobile},'{password}')")
+    connection.commit()
     
     root.mainloop()
     

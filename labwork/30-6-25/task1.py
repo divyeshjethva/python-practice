@@ -10,7 +10,6 @@ root.title("login page")
 name = Label(root,text="Name :", font=('Arial',15,'bold'))
 # name.pack()
 name.place(x=50,y=50)
-
 password = Label(root,text='password :',font=("Arial",15,'bold'))
 password.place(x=50,y=100)
 
