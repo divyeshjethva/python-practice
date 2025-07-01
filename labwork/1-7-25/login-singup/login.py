@@ -16,20 +16,16 @@ def login():
     else:
         messagebox.showerror("Login Failed", "Invalid username or password.")
 
-# Main window
 root = Tk()
 root.title("Stylish Login Page")
 root.geometry("400x500")
 root.configure(bg="#f0f4f7")
 
-# Header
 Label(root, text="🔐 Login", font=("Arial Rounded MT Bold", 28), bg="#f0f4f7", fg="#333").pack(pady=40)
 
-# Frame for entries
 frame = Frame(root, bg="white", bd=2, relief=SOLID)
 frame.pack(pady=10, padx=30)
 
-# Username label and entry
 Label(frame, text="Username", font=("Arial", 12, "bold"), bg="white").grid(row=0, column=0, pady=10, padx=10, sticky="w")
 entry_user = Entry(frame, font=("Arial", 12), width=25, bd=2, relief=GROOVE)
 entry_user.grid(row=1, column=0, padx=10, pady=5)
