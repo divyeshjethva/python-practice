@@ -30,9 +30,11 @@ Label(frame, text="Username", font=("Arial", 12, "bold"), bg="white").grid(row=0
 entry_user = Entry(frame, font=("Arial", 12), width=25, bd=2, relief=GROOVE)
 entry_user.grid(row=1, column=0, padx=10, pady=5)
 
+
 Label(frame, text="Password", font=("Arial", 12, "bold"), bg="white").grid(row=2, column=0, pady=10, padx=10, sticky="w")
 entry_pass = Entry(frame, font=("Arial", 12), width=25, bd=2, relief=GROOVE, show="*")
 entry_pass.grid(row=3, column=0, padx=10, pady=5)
+
 
 Button(root, text="Login", font=("Arial", 14, "bold"), bg="#007acc", fg="white", width=15, command=login).pack(pady=30)
 
